@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* regole colonne */
+[class*="col-"] {
+  height: 100%;
+}
+
+.container > [class*="col-"] {
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.container > [class*="col-"] > [class*="col-"] {
+  background-color: #ff787c;
+  border: 1px solid white;
+}
+
+/* regole altezza */
+.half-height {
+  height: 11vh;
+}
+
+.full-height {
+  height: calc(89vh / 4);
+}
+
+/* regole testo */
+.text-up {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.text-middle {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* padding delle colonne nested */
+.col-6.padding {
+  padding: 7px;
+}
